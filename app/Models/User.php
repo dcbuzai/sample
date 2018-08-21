@@ -27,4 +27,9 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function gravatar($size = '100')
+    {
+        return "https://secure.gravatar.com/avatar/ec22a43e144cbe34c521716f80076b23=$size";
+    }
 }
